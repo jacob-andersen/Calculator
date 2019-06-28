@@ -113,11 +113,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 display.append("9");
             }
-        });btn0.setOnClickListener(new View.OnClickListener() {
+        });
+        btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 display.append("0");
             }
         });
+        btn_clr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                display.setText("");
+            }
+        });
+
     }
 }
